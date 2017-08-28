@@ -28,7 +28,7 @@ use function ApiClients\Foundation\resource_pretty_print;
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
 $loop = Factory::create();
-$client = AsyncClient::create($loop, 'nas02:25353');
+$client = AsyncClient::create($loop, 'pi-hole.local');
 
 $client->overview()->done(function (OverviewInterface $overview) {
     resource_pretty_print($overview);
