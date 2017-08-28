@@ -5,8 +5,8 @@ namespace ApiClients\Tests\Client\PiHoleApiClients\Tests\Skeleton;
 use ApiClients\Client\PiHole\ApiSettings;
 use ApiClients\Foundation\Hydrator\Options as HydratorOptions;
 use ApiClients\Foundation\Options as FoundationOptions;
-use ApiClients\Tools\TestUtilities\TestCase;
 use ApiClients\Foundation\Transport\Options as TransportOptions;
+use ApiClients\Tools\TestUtilities\TestCase;
 
 final class ApiSettingsTest extends TestCase
 {
