@@ -1,6 +1,6 @@
 # Async first Pi-Hole API Client for PHP 7
 
-[![Build Status](https://pi-hole-ci.org/php-api-clients/pi-hole.svg?branch=master)](https://pi-hole-ci.org/php-api-clients/pi-hole)
+[![Build Status](https://travis-ci.org/php-api-clients/pi-hole.svg?branch=master)](https://travis-ci.org/php-api-clients/pi-hole)
 [![Latest Stable Version](https://poser.pugx.org/api-clients/pi-hole/v/stable.png)](https://packagist.org/packages/api-clients/pi-hole)
 [![Total Downloads](https://poser.pugx.org/api-clients/pi-hole/downloads.png)](https://packagist.org/packages/api-clients/pi-hole)
 [![Code Coverage](https://scrutinizer-ci.com/g/php-api-clients/pi-hole/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/php-api-clients/pi-hole/?branch=master)
