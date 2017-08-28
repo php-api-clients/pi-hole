@@ -1,0 +1,9 @@
+class: Overview
+properties:
+  ads_blocked_today: int
+  ads_percentage_today: float
+  dns_queries_today: int
+  domains_being_blocked: int
+  queries_cached: int
+  queries_forwarded: int
+  unique_domains: int

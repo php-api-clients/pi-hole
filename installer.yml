@@ -1,0 +1,52 @@
+package: api-clients/skeleton
+text:
+  welcome: "Welcome to the API Clients new client installer."
+  ascii_art_file:
+    - ascii.small.art
+    - ascii.medium.art
+    - ascii.large.art
+  ascii_art_package: api-clients/branding
+config:
+  current_ns: "ApiClients\\Client\\Skeleton"
+  current_ns_tests: "ApiClients\\Tests\\Client\\Skeleton"
+  require:
+    - installer
+    - installer-client-operations
+  scripts:
+    - post-create-project-cmd
+questions:
+  author_name:
+    description: "Author name"
+    question: "What is your name?"
+  author_email:
+    description: "Author email"
+    question: "What is your email address?"
+    validate: "Assert\\Assertion::email"
+  package_name:
+    description: "Your package"
+    question: "What is your package name?"
+    default: "vendor-name/package-name"
+  path_src:
+    description: "Your project sources location"
+    question: "What is your project sources location?"
+    default: "src/"
+  path_tests:
+    description: "Your project tests location"
+    question: "What is your project tests location?"
+    default: "tests/"
+  ns_vendor:
+    description: "Your namespace"
+    question: "What is your vendor namespace?"
+    default: "MyVendor"
+  ns_tests_vendor:
+    description: "Your test namespace"
+    question: "What is your vendor test namespace?"
+    default: "MyVendor\\Tests"
+  ns_project:
+    description: "Your project namespace"
+    question: "What is your project namespace?"
+    default: "MyProject"
+operations:
+  - "ApiClients\\Tools\\Installer\\Operation\\ComposerJson::create"
+  - "ApiClients\\Tools\\Installer\\Operation\\Client\\ResourcesYml::create"
+  - "ApiClients\\Tools\\Installer\\Operation\\UpdateNamespaces::create"
