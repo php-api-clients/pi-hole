@@ -1,6 +1,6 @@
 {
     "name": "api-clients/pi-hole",
-    "description": "Skeleton for creating API clients",
+    "description": "Async first Pi-Hole API Client for PHP 7",
     "license": "MIT",
     "authors": [
         {
