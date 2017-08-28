@@ -29,6 +29,7 @@ final class AsyncClient implements AsyncClientInterface
 
     /**
      * @param  LoopInterface $loop
+     * @param  string        $host
      * @param  array         $options
      * @return AsyncClient
      */

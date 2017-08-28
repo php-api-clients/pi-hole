@@ -6,11 +6,9 @@ namespace ApiClients\Client\PiHole;
 
 use ApiClients\Client\PiHole\Resource\OverviewInterface;
 use ApiClients\Client\PiHole\Resource\Sync\Overview;
-use ApiClients\Client\Skeleton\Resource\ExampleInterface;
 use ApiClients\Foundation\Factory as FoundationClientFactory;
 use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
-use Rx\React\Promise;
 use function ApiClients\Tools\Rx\setAsyncScheduler;
 use function Clue\React\Block\await;
 
@@ -36,6 +34,7 @@ final class Client implements ClientInterface
     }
 
     /**
+     * @param  string $host
      * @param  array  $options
      * @return Client
      */
@@ -51,7 +50,7 @@ final class Client implements ClientInterface
     }
 
     /**
-     * @param  string           $input
+     * @param  string            $input
      * @return OverviewInterface
      */
     public function overview(): Overview
